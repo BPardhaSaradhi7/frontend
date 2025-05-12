@@ -15,7 +15,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3030/api/students/register', student);
+      await axios.post('http://localhost:2007/api/students/register', student);
       alert('Registered successfully!');
       setStudent({ name: '', email: '', password: '' });
     } catch (error) {
